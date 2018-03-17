@@ -1,0 +1,17 @@
+extends ./layout/main.pug
+
+include ../block/header/header.pug
+include ../block/contact/contact.pug
+include ../block/education/education.pug
+
+
+block title
+  title Главная Страница
+  
+  
+block pagecontent
+    +header()
+    
+    +contact()
+    
+    +education

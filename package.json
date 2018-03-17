@@ -1,0 +1,23 @@
+{
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "csso": "^3.5.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.7.0",
+    "pug": "^2.0.1"
+  }
+}
