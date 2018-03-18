@@ -1,7 +1,11 @@
 mixin contact()
     .contact
-      div.flex-container
-        ul.contact-list
-            -for(var b = 0; b <=4; b++ ) 
-                li.contact-list__item
-                    
+      .flex-container
+        .contact-address
+            p.contact-address__text Main Street,City
+        .contact-email
+            p.contact-email__text contact@domain.com
+        .contact-phone
+            p.contact-phone__text 555-555-555
+        .contact-website
+            p.contact-website__text www.yourweb.com
