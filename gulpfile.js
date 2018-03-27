@@ -1,17 +1,18 @@
-const gulp = require('gulp');
-const stylus = require('gulp-stylus');
-const pug = require('gulp-pug');
-const autoprefixer = require('autoprefixer');
-const postcss = require('gulp-postcss');
+var  gulp = require('gulp'),
+     stylus = require('gulp-stylus'),
+     pug = require('gulp-pug'),
+     autoprefixer = require('autoprefixer'),
+     postcss = require('gulp-postcss'),
+     browserSync = require('browser-sync');
 
 let postplugins = [autoprefixer];
 
 gulp.task('styles', function () {
-
     return gulp.src('./source/styles/main.styl')
         .pipe(stylus() )
         .pipe(postcss(postplugins))
-        .pipe(gulp.dest('./public/css/'));
+        .pipe(gulp.dest('./public/css/'))
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('pages', function () {
@@ -23,7 +24,16 @@ gulp.task('pages', function () {
         .pipe(gulp.dest('./public'));
 });
 
-gulp.task('watch', function () {
+gulp.task('browser-sync', function() {
+    browserSync( {
+        server: {
+            baseDir: 'public'
+        },
+        notify: false
+    });
+});
+
+gulp.task('watch', ['browser-sync','styles'], function () {
 
     gulp.watch(['./source/styles/main.styl', './source/**/*.styl'], ['styles'])
     gulp.watch('./source/**/*.pug', ['pages']);

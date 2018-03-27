@@ -7,3 +7,19 @@ html margin 0 {
 .content {
   display: block;
 }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.education-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.education-list__item {
+  display: flex;
+  flex-direction: column;
+}
+.education__text {
+  margin: 0;
+}
