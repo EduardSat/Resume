@@ -1,18 +1,47 @@
-body margin 0,
-html margin 0 {
+body,
+html {
+  margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-}
-.content {
-  display: block;
+  font-family: "MyriadProRegular";
 }
 .flex-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 0;
 }
+.author {
+  display: flex;
+  width: 30%;
+}
+.author-text {
+  display: block;
+  margin: 0;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Myriad Pro";
+}
+.author-text__name {
+  padding-bottom: 1.3em;
+}
+.author-text__surname {
+  padding-bottom: 2.25em;
+}
+.content {
+  display: block;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
 .education-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding-left: 0;
 }
@@ -21,5 +50,57 @@ html margin 0 {
   flex-direction: column;
 }
 .education__text {
+  margin: 0;
+}
+.education-list__item__text {
+  display: block;
+  margin: 0;
+}
+.education-list__item__text span {
+  color: #020202;
+}
+.education-list__item__text__degree {
+  display: block;
+  width: 23.875em;
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  color: #3d6cb0;
+}
+.education-list__item__text__degree::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.main_block {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.profile__text__profile {
+  display: block;
+  color: #3d6cb0;
+  text-transform: uppercase;
+}
+.profile__text__profile:after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 6px;
+  left: 6.25em;
+  background-color: #3d6cb0;
+}
+.profile__text {
+  display: block;
   margin: 0;
 }

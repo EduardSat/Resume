@@ -1,0 +1,24 @@
+include ../author/author.pug
+include ../contact/contact.pug
+include ../education/education.pug
+include ../profile/profile.pug
+include ../expirience/expirience.pug
+include ../skills/skills.pug
+include ../software/software.pug
+
+mixin main_block()
+    .main_block
+   
+         +author()
+         
+         +education()
+      
+         +contact()
+    
+         +profile()
+    
+         +expirience()
+    
+         +skills()
+    
+         +software()

@@ -1,31 +1,14 @@
 extends ./layout/main.pug
 
-include ../block/contact/contact.pug
-include ../block/education/education.pug
-include ../block/profile/profile.pug
-include ../block/author/author.pug
-include ../block/expirience/expirience.pug
-include ../block/skills/skills.pug
-include ../block/software/software.pug
+
+include ../block/main_block/main_block.pug
+
 
 block title
   title Главная Страница
   
+  body 
+     block pagecontent
+        
+        +main_block()
   
-block pagecontent
-    
-    +contact()
-    
-    +education()
-    
-    +profile()
-    
-    +author()
-    
-    +expirience()
-    
-    +skills()
-    
-    +software()
-    
-    

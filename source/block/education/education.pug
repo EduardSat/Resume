@@ -1,11 +1,10 @@
 mixin education()
  .education
-    div.flex-container 
         p.education__text education
             div
                 ul.education-list 
                     -for(var i=0; i<=4 ; i++) 
                         li.education-list__item 
-                            p master degree //Feb 2011 - Jun 2014
-                            p UNIVERSITY NAME 
-                                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                            p.education-list__item__text.education-list__item__text__degree  master degree #[span //Feb 2011 - Jun 2014]
+                            p.education-list__item__text  UNIVERSITY NAME 
+                                p.education-list__item__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
