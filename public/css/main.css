@@ -1,16 +1,23 @@
 body,
 html {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "MyriadProRegular";
+  font-family: 'MyriadProRegular', Helvetica, Arial, sans-serif;
+  background-repeat: no-repeat;
+}
+html {
+  box-sizing: border-box;
 }
 .flex-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 .author {
   display: flex;
@@ -70,22 +77,30 @@ html {
 .education-list__item__text__degree::before {
   position: absolute;
   content: "";
-  width: 40px;
-  height: 40px;
+  width: 2.5em;
+  height: 2.5em;
   background-color: #000;
   border-radius: 50%;
 }
+.expirience {
+  width: 60%;
+}
+.left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+}
 .main_block {
   display: flex;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 2244px;
   margin-left: 1.25em;
-  margin-right: 1.25em;
 }
 .profile {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
 }
 .profile__text__profile {
   display: block;
@@ -95,12 +110,24 @@ html {
 .profile__text__profile:after {
   position: absolute;
   content: "";
-  width: 10%;
-  height: 6px;
+  width: 337px;
+  height: 11px;
   left: 6.25em;
   background-color: #3d6cb0;
 }
-.profile__text {
-  display: block;
+.profile__text__profile__text display block {
   margin: 0;
+}
+.profile__text {
+  font-family: "Myriad Pro";
+  font-size: 82px;
+  font-weight: 700;
+  margin: 0;
+}
+.right_side {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
 }

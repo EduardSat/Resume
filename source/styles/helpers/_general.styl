@@ -1,14 +1,18 @@
 //общие стили
 body
 html
-    margin 0
-    padding 0
     width 100%
     height 100%
-    font-family: "MyriadProRegular";
-        
+    font-family 'MyriadProRegular',Helvetica, Arial, sans-serif
+    background-repeat no-repeat
+html
+    box-sizing border-box
 .flex-container
     display flex
     flex-direction column
     justify-content space-between 
     margin 0
+*
+*::before
+*::after 
+    box-sizing inherit
