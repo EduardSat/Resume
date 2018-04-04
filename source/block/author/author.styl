@@ -1,29 +1,49 @@
 .author
     display flex
-    width 30%
-   // order: 1
+    flex-direction column
+    width 80%
+    align-items center
+.author__block
+    display flex
+    flex-direction column
+    margin-right 100px
+.author__image
+    display block
+    position relative
+    width rem(465px)
+    height rem(465px)
+    border rem(2px) solid #3d6cb0
+    border-radius 50%
+    margin-top 57px
+    margin-right 120px
+    margin-bottom 10px
+    width 10.5rem
+    height 10.5625rem
+    &::after
+      position absolute
+      content ""
+      border-radius 50%
+      width 150px
+      height 147px
+      top 9px
+      right 7px
+      background-color #3d6cb0
+
 .author-text
    display block
    margin 0
    color text_color
-   font-weight 700
    text-align center
-   //font-size 650%
    text-transform uppercase
-   font-family  "Myriad Pro"
+   font-family 'pt_sansitalic'
 .author-text__name
-    padding-bottom 1.3em
+    display block
+    font-size 2.5rem
+    font-weight 400
 .author-text__surname
-    padding-bottom 2.25em
-//.author__image 
-//   display none
-//   width 465px
-//   height 465px
-//   border 2px solid #3d6cb0
-//   color blue
-//   border-radius 50%
-//   &:after
-//    display block
-//    width: 406px;
-//    height: 406px;
-//    background-color: #3d6cb0;
+    display block
+    font-size 2.6875rem
+    font-weight 700
+.author-text__job
+    display block
+    font-size 1.125rem

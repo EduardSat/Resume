@@ -1,33 +1,41 @@
 .education
     display flex
     flex-direction column
-    width 60%
-.education-list 
+    width 100%
+.education-list
     display flex
     flex-direction column
     list-style-type none
-    padding-left 0 
-.education-list__item 
+    padding-left 0
+    margin: 0
+.education-list__item
     display flex
     flex-direction column
 .education__text
-    margin 0
-.education-list__item__text  
     display block
     margin 0
-    span 
-        color #020202
-.education-list__item__text__degree 
+    font-family "Myriad Pro"
+    font-size 2.025rem
+    font-weight 700
+    text-transform uppercase
+    color #3d6cb0
+.education-list__item__text
     display block
-    width 23.875em
+    margin 0
+    font-weight 400
+    font-size rem(31px)
+    span
+      color #020202
+      font-size rem(31px)
+.education-list__item__text__degree
+    display block
     margin 0
     text-transform uppercase
-    padding-bottom 2.000em
     color: #3d6cb0;
     &::before
         position absolute
         content ""
-        width 2.5em
-        height 2.5em
+        width rem(40px)
+        height rem(40px)
         background-color #000000
         border-radius 50%
