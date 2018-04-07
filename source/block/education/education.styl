@@ -11,31 +11,41 @@
 .education-list__item
     display flex
     flex-direction column
+    width 100%
 .education__text
     display block
+    position relative
     margin 0
-    font-family "Myriad Pro"
-    font-size 2.025rem
-    font-weight 700
+    padding-left 24px
     text-transform uppercase
-    color #3d6cb0
+    background-repeat no-repeat
+    &:before
+      display none
+      position absolute
+      content ''
+      width rem(148px)
+      height rem(143px)
+      background url(../images/haha.png)
 .education-list__item__text
     display block
     margin 0
     font-weight 400
-    font-size rem(31px)
+    font-size 1.2375rem
     span
       color #020202
-      font-size rem(31px)
 .education-list__item__text__degree
     display block
     margin 0
+    position relative
     text-transform uppercase
-    color: #3d6cb0;
+    font-size 1.256rem
+    padding-left 18px
+    color #3d6cb0
     &::before
         position absolute
         content ""
-        width rem(40px)
-        height rem(40px)
+        width 1.2rem
+        height 1.2rem
+        left -2px
         background-color #000000
         border-radius 50%

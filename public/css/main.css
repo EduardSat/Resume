@@ -1,9 +1,9 @@
 body {
   width: 100%;
-  height: 100vh;
   background-repeat: no-repeat;
   font-size: 14px;
   font-size: 1.4rem;
+  margin: 0;
 }
 html {
   box-sizing: border-box;
@@ -23,6 +23,11 @@ h1 {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+.main-caption {
+  font-size: 2.125rem;
+  font-weight: 700;
+  margin: 0;
 }
 .author {
   display: flex;
@@ -80,8 +85,45 @@ h1 {
   display: block;
   font-size: 1.125rem;
 }
-.content {
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact__caption {
   display: block;
+  position: relative;
+}
+.contact__caption:after {
+  position: absolute;
+  content: "";
+  width: 12.0625rem;
+  height: 0.2875rem;
+  left: 14.0625rem;
+  top: 1rem;
+  background-color: #3d6cb0;
+}
+.contact__caption__text {
+  font-size: 2.125rem;
+  color: #3d6cb0;
+  margin: 0;
+  padding-left: 7%;
+  text-transform: uppercase;
+}
+.contact__block {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__text {
+  display: block;
+  color: #3d6cb0;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin: 0;
+  padding-left: 10%;
 }
 .education {
   display: flex;
@@ -98,37 +140,48 @@ h1 {
 .education-list__item {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .education__text {
   display: block;
+  position: relative;
   margin: 0;
-  font-family: "Myriad Pro";
-  font-size: 2.025rem;
-  font-weight: 700;
+  padding-left: 24px;
   text-transform: uppercase;
-  color: #3d6cb0;
+  background-repeat: no-repeat;
+}
+.education__text:before {
+  display: none;
+  position: absolute;
+  content: '';
+  width: 9.25rem;
+  height: 8.9375rem;
+  background: url("../images/haha.png");
 }
 .education-list__item__text {
   display: block;
   margin: 0;
   font-weight: 400;
-  font-size: 1.9375rem;
+  font-size: 1.2375rem;
 }
 .education-list__item__text span {
   color: #020202;
-  font-size: 1.9375rem;
 }
 .education-list__item__text__degree {
   display: block;
   margin: 0;
+  position: relative;
   text-transform: uppercase;
+  font-size: 1.256rem;
+  padding-left: 18px;
   color: #3d6cb0;
 }
 .education-list__item__text__degree::before {
   position: absolute;
   content: "";
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: -2px;
   background-color: #000;
   border-radius: 50%;
 }
@@ -156,24 +209,24 @@ h1 {
 .profile__text__profile {
   display: block;
   color: #3d6cb0;
+  position: relative;
   text-transform: uppercase;
 }
 .profile__text__profile:after {
   position: absolute;
   content: "";
-  width: 337px;
-  height: 11px;
-  left: 6.25em;
+  width: 12.0625rem;
+  height: 0.2875rem;
+  left: 10.0625rem;
+  top: 1rem;
   background-color: #3d6cb0;
 }
-.profile__text__profile__text display block {
+.profile__text__profile__text {
+  display: block;
   margin: 0;
-}
-.profile__text {
-  font-family: "Myriad Pro";
-  font-size: 82px;
-  font-weight: 700;
-  margin: 0;
+  font-size: 0.9375rem;
+  width: 74%;
+  font-weight: 400;
 }
 .right_side {
   display: flex;
@@ -181,4 +234,48 @@ h1 {
   width: 56%;
   align-items: center;
   justify-content: space-between;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.skills__caption {
+  margin-bottom: 5%;
+  position: relative;
+}
+.skills__caption:after {
+  position: absolute;
+  content: "";
+  width: 12.0625rem;
+  height: 0.2875rem;
+  left: 14.0625rem;
+  top: 1rem;
+  background-color: #3d6cb0;
+}
+.skills__block {
+  display: block;
+  margin-bottom: 5%;
+}
+.skills__caption__text {
+  display: block;
+  margin: 0;
+  color: #3d6cb0;
+  font-size: 2.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 1.4375rem;
+}
+.skills-block__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+.skills__block__text {
+  margin: 0;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }

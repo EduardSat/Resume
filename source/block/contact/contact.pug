@@ -1,3 +1,16 @@
 mixin contact()
     .contact
-      |contact
+      .contact__block.contact__caption
+          p.contact__caption__text contact
+      .contact__block.contact__adress
+          p.contact__text address
+          p Main Street, City.
+      .contact__block.contact__email
+          p.contact__text e-mail
+          p contact@domain.com
+      .contact__block.contact__phone
+          p.contact__text phone
+          p 555-555-555
+      .contact__block.contact__website
+          p.contact__text website
+          p www.yourweb.com
