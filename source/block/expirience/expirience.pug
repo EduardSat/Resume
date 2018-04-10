@@ -1,9 +1,11 @@
 mixin expirience()
  .expirience
-         p expirience 
-         ul.expirience-list 
-                    -for(var i=0; i<=3 ; i++) 
-                        li.expirience-list__item 
-                            p.expirience-list__item__text company name // Feb 2011 - Jun 2014
-                            p.expirience-list__item__text your job here
-                            p.expirience-list__item__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+    .expirice__capton-block
+         p.main-caption expirience
+    .expirience__list-block 
+      ul.expirience__list 
+          -for(var i=0; i<=3 ; i++) 
+              li.expirience__list-item 
+                p.expirience-item__company company name #[span // Feb 2011 - Jun 2014]
+                p.expirience-item__job  your job here
+                p.expirience-item__about  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.

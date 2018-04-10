@@ -8,16 +8,15 @@
     list-style-type none
     padding-left 0
     margin: 0
-.education-list__item
+.education__list-item
     display flex
     flex-direction column
     width 100%
-.education__text
+.education__caption
     display block
     position relative
-    margin 0
     padding-left 24px
-    text-transform uppercase
+    color #3d6cb0
     background-repeat no-repeat
     &:before
       display none
@@ -26,26 +25,36 @@
       width rem(148px)
       height rem(143px)
       background url(../images/haha.png)
-.education-list__item__text
+.list-item__caption
     display block
     margin 0
     font-weight 400
-    font-size 1.2375rem
+    font-size rem(26px)
     span
       color #020202
-.education-list__item__text__degree
+.list-item__text-degree
     display block
     margin 0
     position relative
     text-transform uppercase
-    font-size 1.256rem
+    font-size rem(26px)
+    font-weight 700
     padding-left 18px
     color #3d6cb0
+    span
+      font-weight 400
+      color #020202
     &::before
         position absolute
         content ""
-        width 1.2rem
-        height 1.2rem
-        left -2px
+        width 20px
+        height 20px
+        left -4px
+        top 4px
         background-color #000000
         border-radius 50%
+.list-item__about
+    display block
+    color #000000
+    font-size rem(15px)
+    font-weight 400

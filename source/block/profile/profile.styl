@@ -1,7 +1,7 @@
 .profile
     flex-container()
     width 100%
-.profile__text__profile
+.profile__text
     display block
     color #3d6cb0
     position relative
@@ -9,14 +9,23 @@
     &:after
          position absolute
          content ""
-         width: 12.0625rem;
-         height: 0.2875rem;
-         left rem(161px)
-         top rem(16px)
+         width 169px
+         height 6px
+         top 18px
          background-color #3d6cb0
-.profile__text__profile__text
+    &:before
+         position absolute
+         content ""
+         width 74px
+         height 72px
+         left 4px
+         top -10px
+         background-image url(../images/profile-icon.png)
+.profile__text__about
     display block
     margin 0
-    font-size 0.9375rem
-    width 74%
+    color #000000
+    font-size: rem(15px)
     font-weight 400
+    span
+      font-weight 700

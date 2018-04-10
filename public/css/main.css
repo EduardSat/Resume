@@ -25,9 +25,12 @@ h1 {
   box-sizing: inherit;
 }
 .main-caption {
-  font-size: 2.125rem;
+  color: #3d6cb0;
+  font-size: 2.5625rem;
   font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
+  padding-left: 87px;
 }
 .author {
   display: flex;
@@ -104,12 +107,12 @@ h1 {
   top: 1rem;
   background-color: #3d6cb0;
 }
-.contact__caption__text {
-  font-size: 2.125rem;
-  color: #3d6cb0;
-  margin: 0;
-  padding-left: 7%;
-  text-transform: uppercase;
+.contact__caption:before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  background-image: url("../images/contact-icon.png");
 }
 .contact__block {
   display: flex;
@@ -117,13 +120,18 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-.contact__text {
+.contact__block-caption {
   display: block;
   color: #3d6cb0;
-  font-size: 1.5625rem;
+  font-size: 1.3125rem;
   font-weight: 700;
-  margin: 0;
-  padding-left: 10%;
+  text-transform: uppercase;
+}
+.contact__block-about {
+  display: block;
+  color: #000;
+  font-size: 1.3125rem;
+  font-weight: 400;
 }
 .education {
   display: flex;
@@ -137,20 +145,19 @@ h1 {
   padding-left: 0;
   margin: 0;
 }
-.education-list__item {
+.education__list-item {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.education__text {
+.education__caption {
   display: block;
   position: relative;
-  margin: 0;
   padding-left: 24px;
-  text-transform: uppercase;
+  color: #3d6cb0;
   background-repeat: no-repeat;
 }
-.education__text:before {
+.education__caption:before {
   display: none;
   position: absolute;
   content: '';
@@ -158,35 +165,95 @@ h1 {
   height: 8.9375rem;
   background: url("../images/haha.png");
 }
-.education-list__item__text {
+.list-item__caption {
   display: block;
   margin: 0;
   font-weight: 400;
-  font-size: 1.2375rem;
+  font-size: 1.625rem;
 }
-.education-list__item__text span {
+.list-item__caption span {
   color: #020202;
 }
-.education-list__item__text__degree {
+.list-item__text-degree {
   display: block;
   margin: 0;
   position: relative;
   text-transform: uppercase;
-  font-size: 1.256rem;
+  font-size: 1.625rem;
+  font-weight: 700;
   padding-left: 18px;
   color: #3d6cb0;
 }
-.education-list__item__text__degree::before {
+.list-item__text-degree span {
+  font-weight: 400;
+  color: #020202;
+}
+.list-item__text-degree::before {
   position: absolute;
   content: "";
-  width: 1.2rem;
-  height: 1.2rem;
-  left: -2px;
+  width: 20px;
+  height: 20px;
+  left: -4px;
+  top: 4px;
   background-color: #000;
   border-radius: 50%;
 }
+.list-item__about {
+  display: block;
+  color: #000;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
 .expirience {
-  width: 60%;
+  width: 100%;
+}
+.expirience__list-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.expirience__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.expirience-item__company {
+  display: block;
+  color: #000;
+  font-size: 1.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+  padding-left: 18px;
+}
+.expirience-item__company span {
+  font-weight: 400;
+}
+.expirience-item__company:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  left: -2px;
+  top: 4px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.expirience-item__job {
+  display: block;
+  color: #000;
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+.expirience-item__about {
+  display: block;
+  color: #000;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin: 0;
 }
 .left_side {
   display: flex;
@@ -200,33 +267,45 @@ h1 {
   width: 96%;
   margin-left: 2%;
   margin-right: 2%;
+  font-size: 32px;
 }
 .profile {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.profile__text__profile {
+.profile__text {
   display: block;
   color: #3d6cb0;
   position: relative;
   text-transform: uppercase;
 }
-.profile__text__profile:after {
+.profile__text:after {
   position: absolute;
   content: "";
-  width: 12.0625rem;
-  height: 0.2875rem;
-  left: 10.0625rem;
-  top: 1rem;
+  width: 169px;
+  height: 6px;
+  top: 18px;
   background-color: #3d6cb0;
 }
-.profile__text__profile__text {
+.profile__text:before {
+  position: absolute;
+  content: "";
+  width: 74px;
+  height: 72px;
+  left: 4px;
+  top: -10px;
+  background-image: url("../images/profile-icon.png");
+}
+.profile__text__about {
   display: block;
   margin: 0;
+  color: #000;
   font-size: 0.9375rem;
-  width: 74%;
   font-weight: 400;
+}
+.profile__text__about span {
+  font-weight: 700;
 }
 .right_side {
   display: flex;

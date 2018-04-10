@@ -1,9 +1,9 @@
 mixin education()
  .education
-        p.main-caption.education__text education
+        p.main-caption.education__caption education
                 ul.education-list 
                     -for(var i=0; i<=4 ; i++) 
-                        li.education-list__item 
-                            p.education-list__item__text.education-list__item__text__degree  master degree #[span //Feb 2011 - Jun 2014]
-                            p.education-list__item__text  UNIVERSITY NAME 
-                                p.education-list__item__text  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                        li.education__list-item 
+                            p.list-item__text.list-item__text-degree  master degree #[span //Feb 2011 - Jun 2014]
+                            p.list-item__caption  UNIVERSITY NAME 
+                                p.list-item__about  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
